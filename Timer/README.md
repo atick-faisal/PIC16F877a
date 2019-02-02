@@ -3,4 +3,4 @@
 <br>
 Circuit Diagram:
 <br>
-<img src="pic16f877a.png" width="200" height="100"/>
+<img src="pic16f877a.png" width="400"/>
