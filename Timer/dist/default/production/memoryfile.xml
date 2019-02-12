@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\timer_interrupt.X.production.hex">
+  <executable name="dist/default/production/Timer.production.hex">
     <memory name="program">
       <units>words</units>
       <length>8192</length>

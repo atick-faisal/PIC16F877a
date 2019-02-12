@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=timer_interrupt.X
+PROJECTNAME=Timer
 
 # Active Configuration
 DEFAULTCONF=default
