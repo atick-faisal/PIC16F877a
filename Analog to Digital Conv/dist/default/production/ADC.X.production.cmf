@@ -1,0 +1,754 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\atick\AppData\Local\Temp\sbrc.o
+end_init CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\ADC.X.production.o
+cinit CODE 0 7F8 7F8 8 2
+text1 CODE 0 4E 4E C3 2
+text2 CODE 0 2B4 2B4 22F 2
+text3 CODE 0 EEE EEE 112 2
+text4 CODE 0 DA3 DA3 A5 2
+text5 CODE 0 D36 D36 6D 2
+text6 CODE 0 4E3 4E3 315 2
+text7 CODE 0 5 5 23 2
+text8 CODE 0 111 111 1A3 2
+text9 CODE 0 D27 D27 F 2
+text10 CODE 0 D19 D19 E 2
+text11 CODE 0 28 28 26 2
+nvBANK1 BANK1 1 B2 B2 8 1
+maintext CODE 0 E48 E48 A6 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 50 1
+cstackBANK1 BANK1 1 A0 A0 12 1
+bssBANK1 BANK1 1 BA BA 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM BC-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK1 BC-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-4 2
+CONST 800-D18 2
+CONST 1000-1FFF 2
+ENTRY 3-4 2
+ENTRY 800-D18 2
+ENTRY 1000-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-4 2
+CODE 800-D18 2
+CODE 1000-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 3-4 2
+STRCODE 800-D18 2
+STRCODE 1000-1FFF 2
+STRING 3-4 2
+STRING 800-D18 2
+STRING 1000-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\ADC.X.production.o
+7F8 cinit CODE >398:C:\Users\atick\AppData\Local\Temp\sbrc.
+7F8 cinit CODE >401:C:\Users\atick\AppData\Local\Temp\sbrc.
+7F8 cinit CODE >412:C:\Users\atick\AppData\Local\Temp\sbrc.
+7F9 cinit CODE >413:C:\Users\atick\AppData\Local\Temp\sbrc.
+7FA cinit CODE >414:C:\Users\atick\AppData\Local\Temp\sbrc.
+7FB cinit CODE >415:C:\Users\atick\AppData\Local\Temp\sbrc.
+7FC cinit CODE >421:C:\Users\atick\AppData\Local\Temp\sbrc.
+7FC cinit CODE >423:C:\Users\atick\AppData\Local\Temp\sbrc.
+7FD cinit CODE >424:C:\Users\atick\AppData\Local\Temp\sbrc.
+28 text11 CODE >47:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+28 text11 CODE >48:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+2B text11 CODE >49:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+35 text11 CODE >50:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+3E text11 CODE >51:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+41 text11 CODE >52:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+41 text11 CODE >54:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+43 text11 CODE >55:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+49 text11 CODE >56:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+4D text11 CODE >57:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D19 text10 CODE >19:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D19 text10 CODE >29:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D1D text10 CODE >30:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D1F text10 CODE >31:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D20 text10 CODE >42:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D23 text10 CODE >43:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D24 text10 CODE >44:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D26 text10 CODE >45:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D27 text9 CODE >68:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D27 text9 CODE >69:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D2A text9 CODE >70:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D2D text9 CODE >71:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D31 text9 CODE >72:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+D35 text9 CODE >73:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+111 text8 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+111 text8 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+118 text8 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+11E text8 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+11F text8 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+120 text8 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+123 text8 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+126 text8 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+12E text8 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+12F text8 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+130 text8 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+131 text8 CODE >46:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+139 text8 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+13E text8 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+144 text8 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+145 text8 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+146 text8 CODE >56:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+149 text8 CODE >58:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+14C text8 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+154 text8 CODE >63:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+155 text8 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+156 text8 CODE >66:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+157 text8 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+15F text8 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+15F text8 CODE >75:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+165 text8 CODE >76:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+16D text8 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+171 text8 CODE >78:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+175 text8 CODE >79:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+17E text8 CODE >83:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+181 text8 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+18A text8 CODE >89:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+19C text8 CODE >92:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1A4 text8 CODE >93:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1AC text8 CODE >94:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1B4 text8 CODE >96:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1B5 text8 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1B9 text8 CODE >100:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1BC text8 CODE >101:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1C5 text8 CODE >102:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1CE text8 CODE >103:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1CF text8 CODE >104:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1D0 text8 CODE >106:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1D9 text8 CODE >112:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1E9 text8 CODE >115:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1EA text8 CODE >116:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1F8 text8 CODE >118:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1FC text8 CODE >97:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+1FD text8 CODE >122:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+202 text8 CODE >123:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+203 text8 CODE >127:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+205 text8 CODE >128:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+20E text8 CODE >129:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+20F text8 CODE >130:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+210 text8 CODE >132:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+219 text8 CODE >133:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+21F text8 CODE >127:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+220 text8 CODE >139:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+221 text8 CODE >140:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+223 text8 CODE >141:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+234 text8 CODE >145:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+237 text8 CODE >142:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+239 text8 CODE >150:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+23C text8 CODE >151:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+24A text8 CODE >152:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+24C text8 CODE >153:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+265 text8 CODE >154:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+26B text8 CODE >159:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+276 text8 CODE >160:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+27C text8 CODE >161:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+284 text8 CODE >165:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+291 text8 CODE >166:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+295 text8 CODE >167:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+29D text8 CODE >169:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+29E text8 CODE >170:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+29E text8 CODE >173:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+2A4 text8 CODE >175:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+2A6 text8 CODE >176:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+2A7 text8 CODE >177:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+2A8 text8 CODE >180:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+2AC text8 CODE >181:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+2AC text8 CODE >182:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+5 text7 CODE >4:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+6 text7 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+8 text7 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+F text7 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+11 text7 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+17 text7 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+17 text7 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+1E text7 CODE >55:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+20 text7 CODE >56:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+23 text7 CODE >59:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+27 text7 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+4E3 text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+4E3 text6 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+4EA text6 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+4F0 text6 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+4F1 text6 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+4F2 text6 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+4F5 text6 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+4F8 text6 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+500 text6 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+501 text6 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+502 text6 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+50A text6 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+50F text6 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+515 text6 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+516 text6 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+517 text6 CODE >45:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+51A text6 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+51D text6 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+525 text6 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+526 text6 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+527 text6 CODE >57:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+52F text6 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+534 text6 CODE >66:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+53D text6 CODE >119:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+54D text6 CODE >120:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+55A text6 CODE >121:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+567 text6 CODE >122:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+577 text6 CODE >123:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+590 text6 CODE >124:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+5A9 text6 CODE >125:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+5B9 text6 CODE >126:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+5D2 text6 CODE >127:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+5EB text6 CODE >128:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+5F4 text6 CODE >129:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+604 text6 CODE >130:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+61E text6 CODE >131:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+62E text6 CODE >132:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+648 text6 CODE >133:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+651 text6 CODE >134:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+661 text6 CODE >135:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+67B text6 CODE >136:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+68B text6 CODE >137:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+6A5 text6 CODE >138:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+6B5 text6 CODE >139:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+6CF text6 CODE >140:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+6DF text6 CODE >141:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+702 text6 CODE >145:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+727 text6 CODE >146:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+730 text6 CODE >149:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+73D text6 CODE >152:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+73F text6 CODE >153:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+748 text6 CODE >154:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+749 text6 CODE >155:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+74A text6 CODE >157:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+753 text6 CODE >158:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+759 text6 CODE >152:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+75A text6 CODE >163:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+75B text6 CODE >164:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+75D text6 CODE >165:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+76E text6 CODE >169:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+771 text6 CODE >166:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+773 text6 CODE >174:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+776 text6 CODE >175:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+784 text6 CODE >176:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+786 text6 CODE >177:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+79F text6 CODE >178:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7A5 text6 CODE >183:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7B0 text6 CODE >184:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7BA text6 CODE >185:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7BB text6 CODE >187:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7C8 text6 CODE >188:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7D2 text6 CODE >190:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7D3 text6 CODE >191:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7D4 text6 CODE >194:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7DA text6 CODE >195:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7E2 text6 CODE >196:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7E3 text6 CODE >197:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7E4 text6 CODE >199:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7EB text6 CODE >200:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7EB text6 CODE >201:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7EF text6 CODE >203:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+7F7 text6 CODE >205:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+D36 text5 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D36 text5 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D41 text5 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D4A text5 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D5F text5 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D60 text5 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D68 text5 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D6A text5 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D6C text5 CODE >54:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D71 text5 CODE >57:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D7A text5 CODE >58:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D81 text5 CODE >60:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D85 text5 CODE >62:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D85 text5 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D88 text5 CODE >63:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D91 text5 CODE >64:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D93 text5 CODE >62:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D94 text5 CODE >67:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+D97 text5 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+DA2 text5 CODE >70:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+DA3 text4 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DA6 text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DAA text4 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DB9 text4 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DBA text4 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DC2 text4 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DC2 text4 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DC8 text4 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DD1 text4 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DD5 text4 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DD9 text4 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DDD text4 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DE6 text4 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DE7 text4 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DEB text4 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+DF9 text4 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E02 text4 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E02 text4 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E07 text4 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E0B text4 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E0D text4 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E16 text4 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E18 text4 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E1A text4 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E22 text4 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E24 text4 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E3A text4 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E3E text4 CODE >42:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E3F text4 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+E47 text4 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+EEE text3 CODE >75:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+EEE text3 CODE >76:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+F2E text3 CODE >77:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+F79 text3 CODE >78:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+FCE text3 CODE >84:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+FDC text3 CODE >85:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+FEE text3 CODE >86:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+FFF text3 CODE >87:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+2B4 text2 CODE >10:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2B4 text2 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2BB text2 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2C1 text2 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2C2 text2 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2C3 text2 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2C6 text2 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2C9 text2 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2D1 text2 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2D2 text2 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2D3 text2 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2D4 text2 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2DC text2 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2E1 text2 CODE >46:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2E4 text2 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2E5 text2 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2EB text2 CODE >50:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2EC text2 CODE >51:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2ED text2 CODE >55:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2F0 text2 CODE >57:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2F3 text2 CODE >59:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2FB text2 CODE >62:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2FC text2 CODE >64:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2FD text2 CODE >65:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+2FE text2 CODE >68:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+306 text2 CODE >69:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+306 text2 CODE >75:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+30A text2 CODE >77:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+30C text2 CODE >78:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+310 text2 CODE >81:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+314 text2 CODE >82:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+318 text2 CODE >83:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+31C text2 CODE >84:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+320 text2 CODE >85:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+324 text2 CODE >86:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+328 text2 CODE >87:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+32C text2 CODE >88:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+330 text2 CODE >89:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+334 text2 CODE >90:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+338 text2 CODE >91:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+33C text2 CODE >92:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+340 text2 CODE >93:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+344 text2 CODE >94:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+348 text2 CODE >95:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+34C text2 CODE >98:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+34D text2 CODE >100:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+362 text2 CODE >101:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+370 text2 CODE >102:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+378 text2 CODE >103:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+37C text2 CODE >104:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+37D text2 CODE >106:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+37D text2 CODE >109:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+37F text2 CODE >110:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+387 text2 CODE >111:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+388 text2 CODE >113:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+38A text2 CODE >115:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+38B text2 CODE >116:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+38C text2 CODE >118:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+395 text2 CODE >119:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+399 text2 CODE >106:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+39F text2 CODE >121:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+39F text2 CODE >124:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3A1 text2 CODE >127:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3A4 text2 CODE >128:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3AD text2 CODE >132:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3C1 text2 CODE >134:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3C3 text2 CODE >135:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3C5 text2 CODE >136:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3CD text2 CODE >137:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3CE text2 CODE >139:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3D0 text2 CODE >141:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3D1 text2 CODE >142:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3D2 text2 CODE >144:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3DB text2 CODE >145:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3E0 text2 CODE >153:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+3F4 text2 CODE >154:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+432 text2 CODE >155:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+436 text2 CODE >156:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+438 text2 CODE >157:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+43B text2 CODE >158:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+44A text2 CODE >162:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+458 text2 CODE >163:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+458 text2 CODE >166:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+461 text2 CODE >167:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+46A text2 CODE >172:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+473 text2 CODE >173:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+474 text2 CODE >174:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+475 text2 CODE >176:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+477 text2 CODE >177:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+479 text2 CODE >180:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+47B text2 CODE >182:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+47E text2 CODE >183:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+480 text2 CODE >171:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+482 text2 CODE >192:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+483 text2 CODE >193:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+485 text2 CODE >194:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+488 text2 CODE >198:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+48B text2 CODE >195:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+48D text2 CODE >203:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+490 text2 CODE >204:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+49E text2 CODE >205:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4A0 text2 CODE >206:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4B9 text2 CODE >207:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4BC text2 CODE >208:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4C0 text2 CODE >211:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4C0 text2 CODE >215:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4C5 text2 CODE >216:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4CD text2 CODE >218:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4CF text2 CODE >219:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4D0 text2 CODE >225:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4D2 text2 CODE >226:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4D3 text2 CODE >227:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4D4 text2 CODE >230:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4D8 text2 CODE >231:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4D8 text2 CODE >232:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4DF text2 CODE >233:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4E1 text2 CODE >234:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4E2 text2 CODE >237:C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+4E text1 CODE >60:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+4E text1 CODE >61:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+69 text1 CODE >62:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+A4 text1 CODE >63:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+10E text1 CODE >64:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+110 text1 CODE >66:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+E48 maintext CODE >90:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+E48 maintext CODE >91:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+E53 maintext CODE >92:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+E58 maintext CODE >93:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+E62 maintext CODE >95:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+E67 maintext CODE >97:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+E67 maintext CODE >98:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+E89 maintext CODE >99:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+EDE maintext CODE >100:C:\Users\atick\MPLABXProjects\ADC.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\ADC.X.production.o
+__end_of___set_duty_cycle 2000 0 CODE 0 text3 dist/default/production\ADC.X.production.o
+__size_of___set_pwm_freq 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 BC 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__size_of___set_duty_cycle 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\atick\AppData\Local\Temp\sbrc.o
+_main 1C90 0 CODE 0 maintext dist/default/production\ADC.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\ADC.X.production.o
+start 0 0 CODE 0 init C:\Users\atick\AppData\Local\Temp\sbrc.o
+___flmul@aexp 2D 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___flmul@bexp 2E 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___flmul@prod 2F 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___flmul@sign 28 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___flmul@temp 33 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+__size_of___fladd 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__size_of___fldiv 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__size_of___flmul 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__size_of___fltol 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__size_of___adc_read 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+___set_duty_cycle@duty_cycle 6E 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___init_adc 1A32 0 CODE 0 text10 dist/default/production\ADC.X.production.o
+___init_pwm 1A4E 0 CODE 0 text9 dist/default/production\ADC.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+?___adc_read 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\atick\AppData\Local\Temp\sbrc.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\atick\AppData\Local\Temp\sbrc.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\atick\AppData\Local\Temp\sbrc.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\atick\AppData\Local\Temp\sbrc.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\atick\AppData\Local\Temp\sbrc.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\atick\AppData\Local\Temp\sbrc.o
+wtemp0 7E 0 ABS 0 - dist/default/production\ADC.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+___adc_read@adc_value 74 0 COMMON 1 cstackCOMMON dist/default/production\ADC.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\ADC.X.production.o
+_ADRESL 9E 0 ABS 0 - dist/default/production\ADC.X.production.o
+__end_of__Umul8_16 50 0 CODE 0 text7 dist/default/production\ADC.X.production.o
+main@pwm_value B0 0 BANK1 1 cstackBANK1 dist/default/production\ADC.X.production.o
+__size_of__Umul8_16 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+_CCPR1L 15 0 ABS 0 - dist/default/production\ADC.X.production.o
+__end_of___init_adc 1A4E 0 CODE 0 text10 dist/default/production\ADC.X.production.o
+__end_of___init_pwm 1A6C 0 CODE 0 text9 dist/default/production\ADC.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___fldiv@aexp 4E 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___fldiv@bexp 4D 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___fldiv@sign 46 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+__LnvBANK1 0 0 ABS 0 nvBANK1 -
+___adc_read@adc_channel 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC.X.production.o
+__Umul8_16 A 0 CODE 0 text7 dist/default/production\ADC.X.production.o
+__end_of___fladd 9C6 0 CODE 0 text2 dist/default/production\ADC.X.production.o
+__end_of___fldiv 568 0 CODE 0 text8 dist/default/production\ADC.X.production.o
+__end_of___flmul FF0 0 CODE 0 text6 dist/default/production\ADC.X.production.o
+__end_of___fltol 1B46 0 CODE 0 text5 dist/default/production\ADC.X.production.o
+__Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\atick\AppData\Local\Temp\sbrc.o
+___stacklo 0 0 ABS 0 - C:\Users\atick\AppData\Local\Temp\sbrc.o
+___fladd@a 53 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___fladd@b 4F 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___fldiv@a 35 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___fldiv@b 39 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___flmul@a 24 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___flmul@b 20 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+start_initialization FF0 0 CODE 0 cinit dist/default/production\ADC.X.production.o
+_TRISCbits 87 0 ABS 0 - dist/default/production\ADC.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\ADC.X.production.o
+___set_duty_cycle@reg_value AA 0 BANK1 1 cstackBANK1 dist/default/production\ADC.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\atick\AppData\Local\Temp\sbrc.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__size_of___xxtofl 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+___xxtofl@arg 22 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___xxtofl@exp 21 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___xxtofl@val 76 0 COMMON 1 cstackCOMMON dist/default/production\ADC.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FF0 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+___flmul@grs 29 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___set_pwm_freq 9C 0 CODE 0 text1 dist/default/production\ADC.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK1 B2 0 BANK1 1 nvBANK1 dist/default/production\ADC.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_PR2 92 0 ABS 0 - dist/default/production\ADC.X.production.o
+__S0 2008 0 ABS 0 - -
+__S1 BC 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+___xxtofl 1B46 0 CODE 0 text4 dist/default/production\ADC.X.production.o
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__size_of___init_adc 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__size_of___init_pwm 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__HnvBANK1 0 0 ABS 0 nvBANK1 -
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\atick\AppData\Local\Temp\sbrc.o
+__end_of___xxtofl 1C90 0 CODE 0 text4 dist/default/production\ADC.X.production.o
+__end_of___set_pwm_freq 222 0 CODE 0 text1 dist/default/production\ADC.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+___fladd@signs 5F 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+__ptext10 1A32 0 CODE 0 text10 dist/default/production\ADC.X.production.o
+__ptext11 50 0 CODE 0 text11 dist/default/production\ADC.X.production.o
+___fladd 568 0 CODE 0 text2 dist/default/production\ADC.X.production.o
+___fldiv 222 0 CODE 0 text8 dist/default/production\ADC.X.production.o
+___flmul 9C6 0 CODE 0 text6 dist/default/production\ADC.X.production.o
+___fltol 1A6C 0 CODE 0 text5 dist/default/production\ADC.X.production.o
+__pmaintext 1C90 0 CODE 0 maintext dist/default/production\ADC.X.production.o
+__Umul8_16@multiplier 78 0 COMMON 1 cstackCOMMON dist/default/production\ADC.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+_PWM_PERIOD B2 0 BANK1 1 nvBANK1 dist/default/production\ADC.X.production.o
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+___fldiv@grs 49 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___fldiv@rem 42 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___adc_read 50 0 CODE 0 text11 dist/default/production\ADC.X.production.o
+___fldiv@new_exp 47 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+_ADCON0bits 1F 0 ABS 0 - dist/default/production\ADC.X.production.o
+_ADCON1bits 9F 0 ABS 0 - dist/default/production\ADC.X.production.o
+___fladd@grs 62 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+___set_pwm_freq@PR2_value A0 0 BANK1 1 cstackBANK1 dist/default/production\ADC.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__Umul8_16@product 74 0 COMMON 1 cstackCOMMON dist/default/production\ADC.X.production.o
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+___fltol@exp1 6D 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___set_pwm_freq@f 6E 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\ADC.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+?___fladd 4F 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+?___fldiv 35 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+?___flmul 20 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+?___fltol 63 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+___set_duty_cycle@dc A2 0 BANK1 1 cstackBANK1 dist/default/production\ADC.X.production.o
+__ptext1 9C 0 CODE 0 text1 dist/default/production\ADC.X.production.o
+__ptext2 568 0 CODE 0 text2 dist/default/production\ADC.X.production.o
+__ptext3 1DDC 0 CODE 0 text3 dist/default/production\ADC.X.production.o
+__ptext4 1B46 0 CODE 0 text4 dist/default/production\ADC.X.production.o
+__ptext5 1A6C 0 CODE 0 text5 dist/default/production\ADC.X.production.o
+__ptext6 9C6 0 CODE 0 text6 dist/default/production\ADC.X.production.o
+__ptext7 A 0 CODE 0 text7 dist/default/production\ADC.X.production.o
+__ptext8 222 0 CODE 0 text8 dist/default/production\ADC.X.production.o
+__ptext9 1A4E 0 CODE 0 text9 dist/default/production\ADC.X.production.o
+?__Umul8_16 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC.X.production.o
+__end_of___adc_read 9C 0 CODE 0 text11 dist/default/production\ADC.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+?___xxtofl 76 0 COMMON 1 cstackCOMMON dist/default/production\ADC.X.production.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+___fladd@aexp 60 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+___fladd@bexp 61 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+__Umul8_16@word_mpld 76 0 COMMON 1 cstackCOMMON dist/default/production\ADC.X.production.o
+___fltol@sign1 6C 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+___set_duty_cycle 1DDC 0 CODE 0 text3 dist/default/production\ADC.X.production.o
+___fltol@f1 63 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+main@adc_value AC 0 BANK1 1 cstackBANK1 dist/default/production\ADC.X.production.o
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\ADC.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\ADC.X.production.o
+_PWM_FREQ B6 0 BANK1 1 nvBANK1 dist/default/production\ADC.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+___set_duty_cycle@dc_period A6 0 BANK1 1 cstackBANK1 dist/default/production\ADC.X.production.o
+__end_of_main 1DDC 0 CODE 0 maintext dist/default/production\ADC.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+__initialization FF0 0 CODE 0 cinit dist/default/production\ADC.X.production.o
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+___xxtofl@sign 20 0 BANK0 1 cstackBANK0 dist/default/production\ADC.X.production.o
+__pbssBANK1 BA 0 BANK1 1 bssBANK1 dist/default/production\ADC.X.production.o
+_T2CONbits 12 0 ABS 0 - dist/default/production\ADC.X.production.o
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\ADC.X.production.o
+_CCP1CONbits 17 0 ABS 0 - dist/default/production\ADC.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7F8 FF0 8 2
+text1 0 4E 9C C3 2
+text2 0 2B4 568 22F 2
+text3 0 EEE 1DDC 112 2
+text4 0 DA3 1B46 A5 2
+text5 0 D36 1A6C 6D 2
+text6 0 4E3 9C6 315 2
+text7 0 5 A 23 2
+text8 0 111 222 1A3 2
+text9 0 D27 1A4E F 2
+text10 0 D19 1A32 E 2
+text11 0 28 50 26 2
+maintext 0 E48 1C90 A6 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 50 1
+cstackBANK1 1 A0 A0 1C 1
+reset_vec 0 0 0 3 2
+config 0 2007 400E 1 2
