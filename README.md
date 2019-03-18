@@ -1,4 +1,4 @@
-# PIC16F877a
+# PIC16F877a <img src="http://www.myiconfinder.com/uploads/iconsets/128-128-87f1bbedb91a289956f3e90b14853b92-chip.png" width="56" height="56" align="center"/> 
 ## PIC16f877a basics with MPLAB X IDE and XC8 compiler 
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://opensource.org/licenses/GPL-3.0/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) 
 ### 1. Contents:
