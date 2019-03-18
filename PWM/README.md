@@ -1,4 +1,9 @@
 ## PWM - LED Brightness Control
+
+<p align="center">
+  <img src="https://exploreembedded.com/wiki/images/5/54/0_LPC1768_PWM.gif" width="400">
+</p>
+
 Pulse Width Modulation `(PWM)` is a digital signal which is most commonly used in control circuitry. This signal is set high (5v) and low (0v) in a predefined time and speed. The time during which the signal stays high is called the “on time” and the time during which the signal stays low is called the “off time”.
 
 **Duty Cycle of PWM**
@@ -78,4 +83,12 @@ The frequency of a PWM signal determines how fast a PWM completes one period. On
 ```
 
 ### Circuit Diagram
-<img src="diagram.PNG" width="800"/> 
+
+<p align="center">
+  <img src="diagram.PNG" width="600"/> 
+</p>
+
+## License
+[![licensebuttons by-nc-sa](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
+
+This work is licensed under [GNU General Public License v3.0](https://github.com/atick-faisal/PIC16F877a/blob/master/LICENSE).
