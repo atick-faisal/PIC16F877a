@@ -1,5 +1,5 @@
 # PIC16F877a
-## pic16f877a mini projects using mplab x ide and xc8 compiler
+## PIC16f877a basics with MPLAB X IDE and XC8 compiler 
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://opensource.org/licenses/GPL-3.0/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) 
 ### 1. Contents:
 - **[Timer Interrupt](https://github.com/atick-faisal/PIC16F877a/tree/master/Timer)**
