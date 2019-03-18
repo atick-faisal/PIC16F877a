@@ -81,3 +81,14 @@ The USART can be configured in the following modes:
           __write_char('\r');
       }
   ```
+
+### Circuit Diagram
+
+<p align="center">
+<img src="usart.PNG" width="600"/>
+</p>
+
+## License
+[![licensebuttons by-nc-sa](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
+
+This work is licensed under [GNU General Public License v3.0](https://github.com/atick-faisal/PIC16F877a/blob/master/LICENSE).
