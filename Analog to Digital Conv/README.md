@@ -1,4 +1,9 @@
 ## ADC - Analog to Digital Conversion
+
+<p align="center">
+      <img src="https://cdn.openlabpro.com/wp-content/uploads/2016/09/ADC-1.png" width="400"/>
+</p>
+
 The Analog-to-Digital (A/D) Converter module has five inputs for the 28-pin devices and eight for the 40/44-pin devices. The conversion of an analog input signal results in a corresponding `10-bit` digital number. The A/D module has high and low-voltage `reference input` that is software selectable to some combination of VDD, VSS, RA2 or RA3. The A/D converter has a unique feature of being able to operate while the device is in Sleep mode. To operate in Sleep, the A/D clock must be derived from the A/D’s internal RC oscillator.
 
 **The A/D module has four registers. These registers are:**
@@ -36,4 +41,12 @@ The Analog-to-Digital (A/D) Converter module has five inputs for the 28-pin devi
 ```
  
 ### Circuit Diagram
-<img src="adc.PNG" width="800"/>
+
+<p align="center">
+      <img src="adc.PNG" width="600"/>
+</p>
+
+## License
+[![licensebuttons by-nc-sa](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
+
+This work is licensed under [GNU General Public License v3.0](https://github.com/atick-faisal/PIC16F877a/blob/master/LICENSE).
