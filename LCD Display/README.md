@@ -1,6 +1,8 @@
 ## LCD Display Control
 
-![](https://circuitdigest.com/sites/default/files/inlineimages/16x2-LCD-Module-Pinouts.png)
+<p align="center">
+  <img src="https://circuitdigest.com/sites/default/files/inlineimages/16x2-LCD-Module-Pinouts.png" width="400"/>
+</p>
 
 LCD (Liquid Crystal Display) screen is an electronic display module and find a wide range of applications. A `16x2` LCD display is very basic module and is very commonly used in various devices and circuits. These modules are preferred over seven segments and other multi segment LEDs. The reasons being: LCDs are economical; easily programmable; have no limitation of displaying special & even custom characters (unlike in seven segments), animations and so on.
 
@@ -49,4 +51,12 @@ LCD (Liquid Crystal Display) screen is an electronic display module and find a w
 - clear `EN` pin
 
 ### Circuit Diagram
-<img src="lcd.PNG" width="800"/>
+
+<p align="center">
+  <img src="lcd.PNG" width="600"/>
+</p>
+
+## License
+[![licensebuttons by-nc-sa](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
+
+This work is licensed under [GNU General Public License v3.0](https://github.com/atick-faisal/PIC16F877a/blob/master/LICENSE).
