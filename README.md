@@ -1,6 +1,6 @@
 # PIC16F877a
 ## pic16f877a mini projects using mplab x ide and xc8 compiler
-[![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/me-shaon/GLWTPL/blob/master/NSFW_LICENSE) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/SaadAAkash/Web-Development/graphs/commit-activity) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) ![made-with-love](https://img.shields.io/badge/Made%20with-Love-1f425f.svg)
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://opensource.org/licenses/GPL-3.0/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) 
 ### 1. Contents:
 - **[Timer Interrupt](https://github.com/atick-faisal/PIC16F877a/tree/master/Timer)**
 - **[Pulse Width Modulation](https://github.com/atick-faisal/PIC16F877a/tree/master/PWM)**
