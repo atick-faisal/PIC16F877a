@@ -2,40 +2,42 @@
 [d version 1.1 ]
 [d edition pro ]
 [d chip 16F877A ]
-[d frameptr 6 ]
-"43 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+[d frameptr 0 ]
+"5 /opt/microchip/xc8/v2.45/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"43 /opt/microchip/xc8/v2.45/pic/sources/c99/common/fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+"10 /opt/microchip/xc8/v2.45/pic/sources/c99/common/sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+"8 /opt/microchip/xc8/v2.45/pic/sources/c99/common/sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+"8 /opt/microchip/xc8/v2.45/pic/sources/c99/common/sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"4 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+"4 /opt/microchip/xc8/v2.45/pic/sources/c99/common/Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+"10 /opt/microchip/xc8/v2.45/pic/sources/c99/common/xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\pic\__eeprom.c
+"6 /opt/microchip/xc8/v2.45/pic/sources/c99/pic/__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"19 C:\Users\atick\MPLABXProjects\ADC.X\main.c
+"19 /home/ai/Embedded/PIC16F877a/Analog to Digital Conversion/main.c
 [v ___init_adc __init_adc `(v  1 e 1 0 ]
 "47
 [v ___adc_read __adc_read `(i  1 e 2 0 ]
-"60
+"61
 [v ___set_pwm_freq __set_pwm_freq `(v  1 e 1 0 ]
-"68
+"69
 [v ___init_pwm __init_pwm `(v  1 e 1 0 ]
-"75
+"76
 [v ___set_duty_cycle __set_duty_cycle `(v  1 e 1 0 ]
-"90
+"91
 [v _main main `(v  1 e 1 0 ]
 [s S122 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 TOUTPS 1 0 :4:3 
 ]
-"758 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic16f877a.h
+"758 /opt/microchip/mplabx/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8/pic/include/proc/pic16f877a.h
 [s S126 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
@@ -114,29 +116,29 @@
 ]
 [u S78 . 1 `S68 1 . 1 0 `S73 1 . 1 0 ]
 [v _ADCON1bits ADCON1bits `VES78  1 e 1 @159 ]
-"15 C:\Users\atick\MPLABXProjects\ADC.X\main.c
+"15 /home/ai/Embedded/PIC16F877a/Analog to Digital Conversion/main.c
 [v _PWM_FREQ PWM_FREQ `f  1 e 4 0 ]
 "16
 [v _PWM_PERIOD PWM_PERIOD `f  1 e 4 0 ]
-"90
+"91
 [v _main main `(v  1 e 1 0 ]
 {
-"98
-[v main@adc_value adc_value `f  1 a 4 12 ]
 "99
-[v main@pwm_value pwm_value `i  1 a 2 16 ]
-"102
+[v main@adc_value adc_value `f  1 a 4 9 ]
+"100
+[v main@pwm_value pwm_value `i  1 a 2 13 ]
+"103
 } 0
-"60
+"61
 [v ___set_pwm_freq __set_pwm_freq `(v  1 e 1 0 ]
 {
-"63
+"64
 [v ___set_pwm_freq@PR2_value PR2_value `i  1 a 2 0 ]
-"60
-[v ___set_pwm_freq@f f `i  1 p 2 78 ]
-"66
+"61
+[v ___set_pwm_freq@f f `i  1 p 2 77 ]
+"67
 } 0
-"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcadd.c
+"10 /opt/microchip/xc8/v2.45/pic/sources/c99/common/sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 {
 "17
@@ -152,20 +154,20 @@
 [v ___fladd@a a `d  1 p 4 51 ]
 "237
 } 0
-"75 C:\Users\atick\MPLABXProjects\ADC.X\main.c
+"76 /home/ai/Embedded/PIC16F877a/Analog to Digital Conversion/main.c
 [v ___set_duty_cycle __set_duty_cycle `(v  1 e 1 0 ]
 {
-"77
-[v ___set_duty_cycle@dc_period dc_period `f  1 a 4 6 ]
-"76
-[v ___set_duty_cycle@dc dc `f  1 a 4 2 ]
 "78
-[v ___set_duty_cycle@reg_value reg_value `i  1 a 2 10 ]
-"75
-[v ___set_duty_cycle@duty_cycle duty_cycle `i  1 p 2 78 ]
-"87
+[v ___set_duty_cycle@dc_period dc_period `f  1 a 4 4 ]
+"77
+[v ___set_duty_cycle@dc dc `f  1 a 4 0 ]
+"79
+[v ___set_duty_cycle@reg_value reg_value `uc  1 a 1 8 ]
+"76
+[v ___set_duty_cycle@duty_cycle duty_cycle `i  1 p 2 77 ]
+"88
 } 0
-"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\xxtofl.c
+"10 /opt/microchip/xc8/v2.45/pic/sources/c99/common/xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
 {
 [v ___xxtofl@sign sign `uc  1 a 1 wreg ]
@@ -180,29 +182,29 @@
 [v ___xxtofl@sign sign `uc  1 a 1 0 ]
 "44
 } 0
-"43 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\fltol.c
+"43 /opt/microchip/xc8/v2.45/pic/sources/c99/common/fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
 {
 "45
-[v ___fltol@exp1 exp1 `uc  1 a 1 77 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 76 ]
+[v ___fltol@exp1 exp1 `uc  1 a 1 76 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 75 ]
 "43
 [v ___fltol@f1 f1 `d  1 p 4 67 ]
 "70
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcmul.c
+"8 /opt/microchip/xc8/v2.45/pic/sources/c99/common/sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
 [s S527 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S532 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[s S532 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
 [u S535 . 4 `l 1 i 4 0 `d 1 f 4 0 `S527 1 fAsBytes 4 0 `S532 1 fAsWords 4 0 ]
 [v ___flmul@prod prod `S535  1 a 4 15 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 9 ]
 [s S604 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S607 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S604 1 nAsBytes 2 0 ]
+[u S607 . 2 `s 1 i 2 0 `us 1 n 2 0 `S604 1 nAsBytes 2 0 ]
 [v ___flmul@temp temp `S607  1 a 2 19 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 14 ]
@@ -215,21 +217,21 @@
 [v ___flmul@a a `d  1 p 4 4 ]
 "205
 } 0
-"4 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\Umul8_16.c
+"4 /opt/microchip/xc8/v2.45/pic/sources/c99/common/Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
 {
 [v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
 "6
-[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+[v __Umul8_16@word_mpld word_mpld `us  1 a 2 6 ]
 "5
-[v __Umul8_16@product product `ui  1 a 2 4 ]
+[v __Umul8_16@product product `us  1 a 2 4 ]
 "4
 [v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
 [v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
 [v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
 "60
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c90\common\sprcdiv.c
+"8 /opt/microchip/xc8/v2.45/pic/sources/c99/common/sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 {
 "21
@@ -237,7 +239,7 @@
 "22
 [v ___fldiv@rem rem `ul  1 a 4 34 ]
 "20
-[v ___fldiv@new_exp new_exp `i  1 a 2 39 ]
+[v ___fldiv@new_exp new_exp `s  1 a 2 39 ]
 "19
 [v ___fldiv@aexp aexp `uc  1 a 1 46 ]
 "18
@@ -249,17 +251,30 @@
 [v ___fldiv@b b `d  1 p 4 25 ]
 "185
 } 0
-"68 C:\Users\atick\MPLABXProjects\ADC.X\main.c
+"69 /home/ai/Embedded/PIC16F877a/Analog to Digital Conversion/main.c
 [v ___init_pwm __init_pwm `(v  1 e 1 0 ]
 {
-"73
+"74
 } 0
 "19
 [v ___init_adc __init_adc `(v  1 e 1 0 ]
 {
 "45
 } 0
-"47
+"5 /opt/microchip/xc8/v2.45/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"47 /home/ai/Embedded/PIC16F877a/Analog to Digital Conversion/main.c
 [v ___adc_read __adc_read `(i  1 e 2 0 ]
 {
 "55

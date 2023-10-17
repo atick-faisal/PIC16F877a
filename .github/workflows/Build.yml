@@ -1,0 +1,23 @@
+name: Build
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build the project
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        projects: ["PWM", "Timer", "Stepper Motor"]
+    steps:
+      - name: Download the source code
+        uses: actions/checkout@v1
+      - name: Build
+        uses: jeandeaual/mplabx-xc8-build-action@v0.2.0
+        with:
+          project: ${{ matrix.projects }}
+          configuration: default

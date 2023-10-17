@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=ADC.X
+PROJECTNAME=Analog to Digital Conversion
 
 # Active Configuration
 DEFAULTCONF=default
