@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production/Analog_to_Digital_Conversion.production.hex">
+  <executable name="dist/default/debug/Analog_to_Digital_Conversion.debug.hex">
     <memory name="program">
       <units>words</units>
       <length>8192</length>
