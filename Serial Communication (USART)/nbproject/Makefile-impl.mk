@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=USART.X
+PROJECTNAME=Serial Communication (USART)
 
 # Active Configuration
 DEFAULTCONF=default
