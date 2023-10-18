@@ -12,12 +12,21 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        projects: ["PWM", "Timer", "Stepper Motor"]
+        projects:
+          [
+            "Analog to Digital Conversion",
+            "LCD Display",
+            "PWM",
+            "Serial Communication (USART)",
+            "Seven Segment Display",
+            "Stepper Motor",
+            "Timer",
+          ]
     steps:
       - name: Download the source code
         uses: actions/checkout@v1
       - name: Build
-        uses: jeandeaual/mplabx-xc8-build-action@v0.2.0
+        uses: atick-faisal/mplabx-xc8-build-action@v1.0.0
         with:
           project: ${{ matrix.projects }}
           configuration: default
