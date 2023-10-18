@@ -1,0 +1,321 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"1 /opt/microchip/xc8/v2.45/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.45/pic/sources/c99/common/aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 /opt/microchip/xc8/v2.45/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.45/pic/sources/c99/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"1177 /opt/microchip/xc8/v2.45/pic/sources/c99/common/doprnt.c
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1817
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"8 /opt/microchip/xc8/v2.45/pic/sources/c99/common/nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 /opt/microchip/xc8/v2.45/pic/sources/c99/common/nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 /opt/microchip/xc8/v2.45/pic/sources/c99/common/nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 /opt/microchip/xc8/v2.45/pic/sources/c99/common/putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 /opt/microchip/xc8/v2.45/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"5 /opt/microchip/xc8/v2.45/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.45/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /opt/microchip/xc8/v2.45/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"18 /home/ai/Embedded/PIC16F877a/Serial Communication (USART)/main.c
+[v ___init_usart __init_usart `(v  1 e 1 0 ]
+"47
+[v ___set_baud_rate __set_baud_rate `(v  1 e 1 0 ]
+"54
+[v ___write_char __write_char `(v  1 e 1 0 ]
+"61
+[v ___usart_write_ln __usart_write_ln `(v  1 e 1 0 ]
+"69
+[v ___init_adc __init_adc `(v  1 e 1 0 ]
+"79
+[v ___adc_read __adc_read `(i  1 e 2 0 ]
+"91
+[v _main main `(v  1 e 1 0 ]
+[s S59 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"994 /opt/microchip/mplabx/v6.15/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8/pic/include/proc/pic16f877a.h
+[s S68 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S72 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S75 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S78 . 1 `S59 1 . 1 0 `S68 1 . 1 0 `S72 1 . 1 0 `S75 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES78  1 e 1 @24 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1152
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S111 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 GO_nDONE 1 0 :1:2 
+`uc 1 CHS 1 0 :3:3 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1190
+[s S117 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO 1 0 :1:2 
+`uc 1 CHS0 1 0 :1:3 
+`uc 1 CHS1 1 0 :1:4 
+`uc 1 CHS2 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S125 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nDONE 1 0 :1:2 
+]
+[s S128 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO_DONE 1 0 :1:2 
+]
+[u S131 . 1 `S111 1 . 1 0 `S117 1 . 1 0 `S125 1 . 1 0 `S128 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES131  1 e 1 @31 ]
+[s S22 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2025
+[s S31 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S35 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S38 . 1 `S22 1 . 1 0 `S31 1 . 1 0 `S35 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES38  1 e 1 @152 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+[s S157 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 . 1 0 :2:4 
+`uc 1 ADCS2 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2248
+[s S162 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+]
+[u S167 . 1 `S157 1 . 1 0 `S162 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES167  1 e 1 @159 ]
+"3041
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"153 /opt/microchip/xc8/v2.45/pic/sources/c99/common/doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"154
+[v _flags flags `uc  1 s 1 flags ]
+"185
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"16 /home/ai/Embedded/PIC16F877a/Serial Communication (USART)/main.c
+[v _buffer buffer `[50]uc  1 e 50 0 ]
+"91
+[v _main main `(v  1 e 1 0 ]
+{
+"97
+[v main@adc_value adc_value `i  1 a 2 33 ]
+"102
+} 0
+"9 /opt/microchip/xc8/v2.45/pic/sources/c99/common/nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@s s `*.4uc  1 a 1 wreg ]
+[u S696 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
+"13
+[s S699 _IO_FILE 11 `S696 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S699  1 a 11 19 ]
+"12
+[v sprintf@ap ap `[1]*.4v  1 a 1 17 ]
+"9
+[v sprintf@s s `*.4uc  1 a 1 wreg ]
+[v sprintf@fmt fmt `*.24DCuc  1 p 1 14 ]
+"15
+[v sprintf@s s `*.4uc  1 a 1 18 ]
+"23
+} 0
+"1817 /opt/microchip/xc8/v2.45/pic/sources/c99/common/doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+[s S731 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.4S731  1 a 1 wreg ]
+"1820
+[v vfprintf@cfmt cfmt `*.24uc  1 a 1 13 ]
+"1817
+[v vfprintf@fp fp `*.4S731  1 a 1 wreg ]
+[v vfprintf@fmt fmt `*.24DCuc  1 p 1 10 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 11 ]
+"1822
+"1817
+[v vfprintf@fp fp `*.4S731  1 a 1 12 ]
+"1840
+} 0
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[s S731 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.4S731  1 a 1 wreg ]
+[u S744 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
+"1188
+[v vfpfcnvrt@convarg convarg `S744  1 a 4 5 ]
+"1179
+[v vfpfcnvrt@c c `uc  1 a 1 9 ]
+[v vfpfcnvrt@cp cp `*.24uc  1 a 1 4 ]
+"1180
+[v vfpfcnvrt@done done `a  1 a 1 2 ]
+"1177
+[v vfpfcnvrt@fp fp `*.4S731  1 a 1 wreg ]
+[v vfpfcnvrt@fmt fmt `*.4*.24uc  1 p 1 11 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 12 ]
+"1201
+"1177
+[v vfpfcnvrt@fp fp `*.4S731  1 a 1 3 ]
+"1814
+} 0
+"8 /opt/microchip/xc8/v2.45/pic/sources/c99/common/nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[u S696 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
+[s S699 _IO_FILE 11 `S696 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.4S699  1 p 1 2 ]
+"24
+} 0
+"7 /opt/microchip/xc8/v2.45/pic/sources/c99/common/putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"1 /opt/microchip/xc8/v2.45/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 7 ]
+"4
+} 0
+"5 /opt/microchip/xc8/v2.45/pic/sources/c99/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 /opt/microchip/xc8/v2.45/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"61 /home/ai/Embedded/PIC16F877a/Serial Communication (USART)/main.c
+[v ___usart_write_ln __usart_write_ln `(v  1 e 1 0 ]
+{
+[v ___usart_write_ln@data data `*.4uc  1 a 1 wreg ]
+"62
+[v ___usart_write_ln@i i `i  1 a 2 6 ]
+"61
+[v ___usart_write_ln@data data `*.4uc  1 a 1 wreg ]
+"63
+[v ___usart_write_ln@data data `*.4uc  1 a 1 8 ]
+"67
+} 0
+"5 /opt/microchip/xc8/v2.45/pic/sources/c99/common/strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"7
+[v strlen@a a `*.4DCuc  1 a 1 3 ]
+"5
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"7
+[v strlen@s s `*.4DCuc  1 a 1 4 ]
+"12
+} 0
+"54 /home/ai/Embedded/PIC16F877a/Serial Communication (USART)/main.c
+[v ___write_char __write_char `(v  1 e 1 0 ]
+{
+[v ___write_char@c c `uc  1 a 1 wreg ]
+[v ___write_char@c c `uc  1 a 1 wreg ]
+[v ___write_char@c c `uc  1 a 1 0 ]
+"59
+} 0
+"47
+[v ___set_baud_rate __set_baud_rate `(v  1 e 1 0 ]
+{
+[v ___set_baud_rate@baud_rate baud_rate `i  1 p 2 6 ]
+"52
+} 0
+"5 /opt/microchip/xc8/v2.45/pic/sources/c99/common/aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 2 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 1 ]
+[v ___aldiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"18 /home/ai/Embedded/PIC16F877a/Serial Communication (USART)/main.c
+[v ___init_usart __init_usart `(v  1 e 1 0 ]
+{
+"45
+} 0
+"69
+[v ___init_adc __init_adc `(v  1 e 1 0 ]
+{
+"77
+} 0
+"79
+[v ___adc_read __adc_read `(i  1 e 2 0 ]
+{
+"87
+[v ___adc_read@adc_value adc_value `i  1 a 2 4 ]
+"79
+[v ___adc_read@adc_channel adc_channel `i  1 p 2 0 ]
+"89
+} 0

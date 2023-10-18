@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Stepper Motor.X
+PROJECTNAME=Stepper Motor
 
 # Active Configuration
 DEFAULTCONF=default

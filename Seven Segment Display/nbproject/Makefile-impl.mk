@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Seven Segment Display.X
+PROJECTNAME=Seven Segment Display
 
 # Active Configuration
 DEFAULTCONF=default
