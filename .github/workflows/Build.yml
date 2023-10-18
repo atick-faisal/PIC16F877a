@@ -26,7 +26,7 @@ jobs:
       - name: Download the source code
         uses: actions/checkout@v1
       - name: Build
-        uses: atick-faisal/mplabx-xc8-build-action@v1.0.0
+        uses: atick-faisal/mplabx-xc8-build-action@v1.0.1
         with:
           project: ${{ matrix.projects }}
           configuration: default
